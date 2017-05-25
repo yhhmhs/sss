@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>果壳网</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="guokr.css">
+	<script src="jquery-1.7.2.js"></script>
+	<script>
+		window.onload = window.onresize = function (){
+			document.documentElement.style.fontSize = document.documentElement.clientWidth * 20 / 320 + 'px';
+			$('a').click(function () {
+				alert(1);
+			});
+		}
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+	<header>
+		<!-- 头部标题 -->
+		<div class="header-title">
+			<a href="javascript:;" class="slide-down">下拉</a>
+			<h1>Guokr.com</h1>
+			<a href="javascript:;" class="pc">PC</a>
+		</div>
+		<!-- 头部的登录注册 -->
+		<div class="header-info">
+			<a href="javascript:;" class="login">用户登录</a>
+			<span class="line"></span>
+			<a href="javascript:;" class="register">用户注册</a>
+		</div>
+	</header>
+	<!-- 中间部分 -->
+	<section>
+		<!-- 轮播图 -->
+		<ul class="lunbo">
+			<li>
+				<img src="image/banner01.png" alt="">
+				<span>紫禁城的石头是怎么运来的</span>
+			</li>
+		</ul>
+	</section>
+</body>
+</html>
